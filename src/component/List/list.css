@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+
+.List-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 17%;
+    height: 40px;
+    font-size: 17px;
+    margin-left: 4%;
+    border: none;
+    border-bottom: 2px solid green;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 3px 6px black;
+}
+
+.list-btn:focus{
+    background-color: rgb(122, 255, 122);
+}
+
+.list-btn:hover{
+    cursor: pointer;
+    background-color: rgb(184, 255, 184);
+    color: black;
+}
+
+.list-option-btn{
+    margin-left: 60%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 28pc;
+    overflow: auto;
+    position: absolute;
+    top: 25%;
+    width: 38%;
+    overflow: auto;
+    /* margin-top: -33.5%; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 3px 6px black;
+}
+
+.list-button{
+    /* width: 40%; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 85%;
+    margin-left: 30px;
+    font-size: 19px;
+    padding: 12px 12px;
+    z-index: -1;
+    border: none;
+    border-left: 2px solid rgb(43, 43, 124);
+    border-bottom: 2px solid rgb(43, 43, 124);
+}
+
+.list-button:hover{
+    cursor: pointer;
+    background-color: rgb(107, 107, 255);
+    color: white;
+}
+
+/* .list-link{
+    display: flex;
+    border: 2px solid black;
+    margin-left: 85%;
+    margin-top: -130px;
+    
+} */
+
+.notes-head{
+    border: 2px solid;
+    background-color: rgb(253, 199, 51);
+    color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    height: 3pc;
+    position: sticky;
+    top: 0%;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 2px 3px 6px black;
+}
+
+.notes-head-name{
+    color: black;
+    font-size: 17px;
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.List-image{
+    width: 30%;
+    margin-left: 25%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: -1;
+    animation: mylistimage 4s;
+}
+
+@keyframes mylistimage{
+    0%{
+        width: 5%;
+        margin-top: 0%;
+    }
+    100%{
+        width: 30%;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .list-btn{
+        display: inline;
+    margin-left: 48px;
+    font-size: 17px;
+    width: 40%;
+    }
+
+    .list-option-btn{
+        margin-left: 13%;
+        height: 28pc;
+        width: 73%;
+        position: absolute;
+        top: 93%;
+    }
+
+    .List-image{
+        width: 50%;
+        margin-left: 27%;
+        position: absolute;
+        top: 98%;
+        z-index: -1;
+        animation: mylistimage 4s;
+    }
+    @keyframes mylistimage{
+        0%{
+            width: 5%;
+            top: 80%;
+        }
+        100%{
+            width: 50%;
+            top: 90%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .list-option-btn{
+        width: 82%;
+    margin-left: 8%;
+    }
+    .list-btn{
+        font-size: 15px;
+        width: 140px;
+        margin-left: 70px;
+    }
+    .notes-head{
+        font-size: 22px;
+    }
+    .notes-head-name{
+        font-size: 14px;
+    }
+}
+
+/* @media only screen and (max-width: 400px){
+    .list-btn{
+        margin-left: 72px;
+    }
+    .list-option-btn{
+        margin-left: 7%;
+        height: 25pc;
+        width: 82%;
+        top: 80%;
+    }
+} */
+
+@media only screen and (max-width: 440px){
+    .list-btn{
+        margin-left: 72px;
+        font-size: 15px;
+        height: 43px;
+        width: 105px;
+    }
+
+    .list-option-btn{
+        margin-left: 7%;
+        height: 25pc;
+        width: 82%;
+        top: 92%;
+    }
+
+    .List-image{
+        width: 55%;
+        margin-left: 21%;
+        top: 95%;
+        animation: mylistimage 4s;
+    }
+    @keyframes mylistimage{
+        0%{
+            width: 5%;
+            margin-top: 47%;
+        }
+        100%{
+            width: 55%;
+            top: 95%;
+        }
+    }
+    .notes-head{
+        font-size: 22px;
+    }
+    .list-button{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .list-btn{
+        margin-left: 33px;
+        width: 130px;
+    }
+
+    .list-option-btn{
+        margin-left: 5%;
+        height: 24pc;
+        width: 86%;
+    }
+}
+
+
+@media only screen and (max-width: 341px){
+    .List-head{
+        font-size: 19px;
+    }
+    .list-btn{
+        margin-left: 30px;
+        font-size: 13px;
+        height: 39px;
+        width: 114px;
+    }
+
+    .list-option-btn{
+        top: 85%;
+    }
+    .list-button{
+        margin-left: 14px;
+        font-size: 14px;
+    }
+}
+
+
+
+
